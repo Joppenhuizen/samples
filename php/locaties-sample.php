@@ -18,7 +18,7 @@ function loc_save_postdata($post_id)
         );
     }
     if (array_key_exists('url', $_POST)) {
-    	$url = $_POST['url'];
+    	$url = esc_url_raw($_POST['url']);
         update_post_meta(
             $post_id,
             '_url',
