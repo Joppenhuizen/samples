@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     });
     $('.artiesten-list-nav .prev').click(function() {
         var select = $('.artiest-list-item.selected').next();
-		changeimg(select);
+        changeimg(select);
     });
 
     $('.artiesten-zoeken-letter').click(function() {
