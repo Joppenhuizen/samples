@@ -46,7 +46,7 @@ add_action('save_post', 'loc_save_postdata');
 
 function geocode($string){
    	$string = urlencode($string);
-   	$details_url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$string.",Amsterdam&key=AIzaSyCfFr0s52wR6Jqmw3ugScRO33aktlRtoJY";
+   	$details_url = "https://maps.googleapis.com/maps/api/geocode/json?address=".$string.",Amsterdam&key=apikey";
  
 	$request = wp_remote_get($details_url);
 
